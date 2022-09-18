@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Mandira.ico" type="image/x-icon">
+    <title>Formulários</title>
+
+    <style>
+        fieldset {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1>Exemplos de formulários</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iest">ESTADO: </label>
+                <select name="estado" id="iest">
+                    <option value="" selected>---escolha---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">PROFISSÃO:</label>
+                <input type="text" name="prof" id="iprof" list="listprof">
+                <datalist id="listprof">
+                    <option>Porteiro</option>
+                    <option>Médico</option>
+                    <option>Advogado</option>
+                    <option>Zelador</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="texto">Mensagem:</label><br>
+                <textarea name="texto" id="itexto" cols="30" rows="10" placeholder="digite sua mensagem"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
