@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="M.jpg" type="image/x-icon">
+    <title>Select</title>
+
+    <style>
+        fieldset {
+            width: 500px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+
+        <h1>Exemplo de formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iest">Estado: </label>
+                <select name="estado" id="iest">
+                    <option value="" selected>----Escolha----</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="MA">Maranhão</option>
+                    </optgroup>
+                </select>]
+            <p>
+                <label for="iprof">Profissão: </label>
+                <input type="text" name="prof" id="iprof" list="listprof">
+                <datalist id="listprof">
+                    <option>Administrador</option>
+                    <option>Mecânico</option>
+                    <option>Programador</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem: </label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="digite aqui seu texto...."></textarea>
+            </p>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+
+    </fieldset>
+
+</body>
+
+</html>
