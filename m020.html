@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="M.jpg" type="image/x-icon">
+    <title>Formulários</title>
+
+    <style>
+        fieldset {
+            width: 400px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1>Formulários caixas e texto.</h1>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p>
+                <label for="iusu">Usuário:</label>
+                <input type="text" name="usuário" id="iusu" required minlength="5" size="15" placeholder="digite seu nome" autocomplete="username">
+            </p>
+            <p>
+                <label for="isenh">Senha:</label>
+                <input type="password" name="senha" id="isenh" required minlength="5" size="15" autocomplete="current-password">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
