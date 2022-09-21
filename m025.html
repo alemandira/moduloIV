@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="M.jpg" type="image/x-icon">
+    <title>Formulário</title>
+
+    <style>
+        body {
+            width: 400px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+        }
+        fieldset {
+            border: 1px dashed darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="">
+        <fieldset>
+            <legend>Seletor de cores</legend>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label for="inivel">Nivel de Satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="3" oninput="ival.innerHTML = Number(inivel.value)">
+                <output id="ival">3</output>
+            </p>
+            <p>
+                <label for="ifoto">Foto do perfil:</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>
