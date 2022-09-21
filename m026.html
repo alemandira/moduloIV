@@ -9,7 +9,7 @@
     <title>Select</title>
 
     <style>
-        fieldset {
+        body {
             width: 500px;
             margin: auto;
             font-family: Arial, Helvetica, sans-serif;
@@ -18,45 +18,44 @@
 </head>
 
 <body>
-    <fieldset>
-
-        <h1>Exemplo de formulário</h1>
+    
+    <h1>Exemplo de formulário</h1>
         <form action="cadastro.php" method="post" autocomplete="on">
-            <p>
-                <label for="iest">Estado: </label>
-                <select name="estado" id="iest">
-                    <option value="" selected>----Escolha----</option>
-                    <optgroup label="Região Sudeste">
-                        <option value="SP">São Paulo</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="MG">Minas Gerais</option>
-                    </optgroup>
-                    <optgroup label="Região Nordeste">
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="MA">Maranhão</option>
-                    </optgroup>
-                </select>]
-            <p>
-                <label for="iprof">Profissão: </label>
-                <input type="text" name="prof" id="iprof" list="listprof">
-                <datalist id="listprof">
-                    <option>Administrador</option>
-                    <option>Mecânico</option>
-                    <option>Programador</option>
-                </datalist>
-            </p>
-            <p>
-                <label for="imsg">Mensagem: </label><br>
-                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="digite aqui seu texto...."></textarea>
-            </p>
+            <fieldset>
+                <p>
+                    <label for="iest">Estado: </label>
+                    <select name="estado" id="iest">
+                        <option value="" selected>----Escolha----</option>
+                        <optgroup label="Região Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+                        <optgroup label="Região Nordeste">
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="MA">Maranhão</option>
+                        </optgroup>
+                    </select>]
+                <p>
+                    <label for="iprof">Profissão: </label>
+                    <input type="text" name="prof" id="iprof" list="listprof">
+                    <datalist id="listprof">
+                        <option>Administrador</option>
+                        <option>Mecânico</option>
+                        <option>Programador</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="imsg">Mensagem: </label><br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="digite aqui seu texto...."></textarea>
+                </p>
+            </fieldset>
             </p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </form>
-
-    </fieldset>
-
+    
 </body>
 
 </html>
