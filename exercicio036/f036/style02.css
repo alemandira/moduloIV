@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@media screen and (min-width: 728px) {
+
+    #burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu> ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+    
+}
